@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 350px;
+        }
+        .img-gato {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .code {
+            font-family: monospace;
+            background: #e0e0e0;
+            padding: 8px;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Reemplaza 'gato.png' por el nombre con el que guardaste la imagen -->
+        <img src="gato.png" alt="Jesus" class="img-gato">
+        <h1 id="texto">Jesus es una puta te odiamos</h1>
+        <p>Texto codificado en Base64:</p>
+        <p class="code" id="base64"></p>
+    </div>
+
+    <script>
+        // Obtener el texto del encabezado
+        const mensaje = document.getElementById('texto').innerText;
+    </script>
+
+</body>
+</html>
